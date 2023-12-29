@@ -59,8 +59,6 @@ public class ProjectOrsApplication extends SpringBootServletInitializer{
 			
 		
 			
-			
-			
 			  @Override public void addInterceptors(InterceptorRegistry registry) {
 			  registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns(
 			 "/Auth/**"); }
@@ -71,10 +69,8 @@ public class ProjectOrsApplication extends SpringBootServletInitializer{
 			  @Override public void addResourceHandlers(ResourceHandlerRegistry registry) {
 			  registry.addResourceHandler("/**").addResourceLocations("classpath:/public/")
 			 ; }
+
 			
-			
-			  
-			 
 			};
 
 		return w;
