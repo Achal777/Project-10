@@ -37,16 +37,16 @@ public class FrontCtl extends HandlerInterceptorAdapter {
 		
 		
 		
-		/* HttpSession session = request.getSession(); */
+		 HttpSession session = request.getSession(); 
 		String path = request.getServletPath();
 		
 		System.out.println(" Front Ctl Called " + path);
-		/*
-		 * System.out.println(" Session ID " + session.getId());
-		 * System.out.println("Usercontext " + session.getAttribute("`"));
-		 */
+		
+		  System.out.println(" Session ID " + session.getId());
+		 System.out.println("Usercontext " + session.getAttribute("`"));
+		 
 
-		/*if (!path.startsWith("/Auth/")) {
+	if (!path.startsWith("/Auth/")) {
 			System.out.println("inside if condition");
 			//System.out.println(session.getAttribute("test")+"-------test____");
 			if(session.getId()==null) {
@@ -79,7 +79,7 @@ public class FrontCtl extends HandlerInterceptorAdapter {
 	}
 
 	
-*/
+
 		boolean pass= false;
 		if (!path.startsWith("/Auth/")) {
 		//	System.out.println("inside if condition");
